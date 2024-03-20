@@ -1,41 +1,35 @@
 {
-	"schemaVersion": 1,
-	"id": "netherlink",
-	"version": "${version}",
-	"name": "NetherLink",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/netherlink/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.netherlink.NetherLink"
-		],
-		"client": [
-			"com.netherlink.NetherLinkClient"
-		]
-	},
-	"mixins": [
-		"netherlink.mixins.json",
-		{
-			"config": "netherlink.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.15.7",
-		"minecraft": "~1.20.4",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "netherlink",
+  "version": "${version}",
+  "name": "NetherLink",
+  "description": "🧮 Calculate the coordinates for Nether using this easy command.",
+  "authors": ["LightAndy"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/netherlink/icon.jpg",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.netherlink.NetherLink"],
+    "client": ["com.netherlink.NetherLinkClient"]
+  },
+  "mixins": [
+    "netherlink.mixins.json",
+    {
+      "config": "netherlink.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }
