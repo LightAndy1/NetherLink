@@ -120,6 +120,24 @@ public class NetherLinkClient implements ClientModInitializer {
                   )
               )
           )
+          .then(
+            ClientCommandManager
+              .literal("help")
+              .executes(context -> {
+                context
+                  .getSource()
+                  .sendFeedback(
+                    Text.literal(
+                      "§4NetherLink §r§lHelp" +
+                      "\n§r§l/netherlink§r - Automatically gets your current position and world and calculates the coordinates." +
+                      "\n§r§l/netherlink nether <x> <y> <z>§r - Calculates the nether coordinates from overworld coordinates." +
+                      "\n§r§l/netherlink overworld <x> <y> <z>§r - Calculates the overworld coordinates from nether coordinates."
+                    )
+                  );
+
+                return 1;
+              })
+          )
           .executes(context -> {
             PlayerEntity player = MinecraftClient.getInstance().player;
             int x = (int) (
