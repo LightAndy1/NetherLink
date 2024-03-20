@@ -6,10 +6,11 @@
   "description": "🧮 Calculate the coordinates for Nether using this easy command.",
   "authors": ["LightAndy"],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/LightAndy1/NetherLink",
+    "issues": "https://github.com/LightAndy1/NetherLink/issues",
+    "email": "andy.197197@yahoo.com"
   },
-  "license": "CC0-1.0",
+  "license": "GPL-3.0+",
   "icon": "assets/netherlink/icon.jpg",
   "environment": "*",
   "entrypoints": {
