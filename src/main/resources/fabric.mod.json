@@ -3,7 +3,7 @@
   "id": "netherlink",
   "version": "${version}",
   "name": "NetherLink",
-  "description": "🧮 Calculate the coordinates for Nether using this easy command.",
+  "description": "The NetherLink mod is your ultimate companion for seamless travel between the Nether and Overworld in Minecraft. Say goodbye to the hassle of manual calculations and let NetherLink do the heavy lifting for you!",
   "authors": ["LightAndy"],
   "contact": {
     "sources": "https://github.com/LightAndy1/NetherLink",
