@@ -48,7 +48,7 @@ public class NetherLinkClient implements ClientModInitializer {
                               .getSource()
                               .sendFeedback(
                                 Text.literal( //? Caclulates overworld coordinates to nether
-                                  "§2Overworld coordinates:§r§l " +
+                                  "§aOverworld coordinates:§r§l " +
                                   x +
                                   " " +
                                   y +
@@ -101,15 +101,15 @@ public class NetherLinkClient implements ClientModInitializer {
                                 Text.literal( //? Caclulates nether coordinates to overworld
                                   "§4Nether coordinates:§r§l " +
                                   x +
-                                  ", " +
+                                  " " +
                                   y +
-                                  ", " +
+                                  " " +
                                   z +
-                                  "\n§2Overworld coordinates:§r§l " +
+                                  "\n§aOverworld coordinates:§r§l " +
                                   (x * 8) +
-                                  ", " +
+                                  " " +
                                   y +
-                                  ", " +
+                                  " " +
                                   (z * 8)
                                 )
                               );
@@ -128,10 +128,11 @@ public class NetherLinkClient implements ClientModInitializer {
                   .getSource()
                   .sendFeedback(
                     Text.literal(
-                      "§4NetherLink §r§lHelp" +
-                      "\n§r§l/netherlink§r - Automatically gets your current position and world and calculates the coordinates." +
-                      "\n§r§l/netherlink nether <x> <y> <z>§r - Calculates the nether coordinates from overworld coordinates." +
-                      "\n§r§l/netherlink overworld <x> <y> <z>§r - Calculates the overworld coordinates from nether coordinates."
+                      "§4§lNetherLink §rHelp" +
+                      "\n§l/netherlink§r - Automatically calculates the coordinates of the opposite world." +
+                      "\n§l/netherlink nether <x> <y> <z>§r - Calculates the nether coordinates from overworld coordinates." +
+                      "\n§l/netherlink overworld <x> <y> <z>§r - Calculates the overworld coordinates from nether coordinates." +
+                      "\n§l/netherlink help§r - Shows this help message."
                     )
                   );
 
@@ -157,14 +158,14 @@ public class NetherLinkClient implements ClientModInitializer {
               //? Caclulates nether coordinates to overworld
               ix = x / 8;
               iz = z / 8;
-              worldName = "§2Overworld";
+              worldName = "§aOverworld";
               iWorldName = "§4Nether";
             } else if (worldName.equals("minecraft:the_nether")) {
               //? Caclulates overworld coordinates to nether
               ix = x * 8;
               iz = z * 8;
               worldName = "§4Nether";
-              iWorldName = "§2Overworld";
+              iWorldName = "§aOverworld";
             } else {
               context
                 .getSource()
