@@ -1,7 +1,5 @@
 # 🌐 NetherLink 🌐
 
----
-
 The **NetherLink** mod is your ultimate companion for seamless travel between the Nether and Overworld in Minecraft. Say goodbye to the hassle of manual calculations and let **NetherLink** do the heavy lifting for you!
 
 ## Features
