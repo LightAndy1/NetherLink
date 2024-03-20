@@ -14,14 +14,36 @@ public class NetherLinkClient implements ClientModInitializer {
       dispatcher.register(
         ClientCommandManager
           .literal("netherlink")
-          .executes(context -> {
-            context
-              .getSource()
-              .sendFeedback(
-                Text.literal("Netherlink command executed in the client!")
-              );
-            return 1;
-          })
+          .then(
+            ClientCommandManager
+              .literal("nether")
+              .executes(context -> {
+                context
+                  .getSource()
+                  .sendFeedback(
+                    Text.literal(
+                      "Netherlink (from Overworld to Nether) command executed in the client!"
+                    )
+                  );
+
+                return 1;
+              })
+          )
+          .then(
+            ClientCommandManager
+              .literal("overworld")
+              .executes(context -> {
+                context
+                  .getSource()
+                  .sendFeedback(
+                    Text.literal(
+                      "Netherlink (from Nether to Overworld) command executed in the client!"
+                    )
+                  );
+
+                return 1;
+              })
+          )
       )
     );
   }
