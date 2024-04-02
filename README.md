@@ -29,8 +29,8 @@ Overworld Coordinates = Nether Coordinates * 8
 
 ### Links
 
-- [CurseForge (in review)](https://curseforge.com/minecraft/mc-mods/netherlink)
-- [Modrinth (in review)](https://www.modrinth.com/mod/netherlink)
+- [CurseForge](https://curseforge.com/minecraft/mc-mods/netherlink)
+- [Modrinth](https://www.modrinth.com/mod/netherlink)
 - [Planet Minecraft](https://www.planetminecraft.com/mod/netherlink/)
 - [GitHub](https://github.com/LightAndy1/NetherLink)
 
